@@ -12,7 +12,7 @@ output reg E//E - execution, ~E - fetch
 reg [31:0] memory [255:0];
 
 initial begin
-	$readmemb ("C:/VerilogProjects/CPU/memory.txt", memory);
+	$readmemb ("memory.txt", memory);
 end
 
 always @(posedge clk) begin
