@@ -12,7 +12,7 @@ module GPR (
 reg [31:0] data [0:31]; 
 
 initial begin
-     $readmemb("C:/VerilogProjects/CPU/values.txt", data);
+     $readmemb("values.txt", data);
 	  data[0][31:0] = 0; //gpr0 should always stay 0
 end
 
